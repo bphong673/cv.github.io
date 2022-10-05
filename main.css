@@ -1,0 +1,44 @@
+:root {
+    --wblue: #1463f3;
+    --wblack: #1d2023;
+    --wwhite: #CCD0d8;
+}
+
+/*Basic Settings*/
+body, html {
+    width: 100vw;
+    height: 100vh; 
+}
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+background: var(--wblue);
+    display: block;
+}
+
+.nav {
+    background: var(--wblack);
+    height: 10vh;
+    display: flex;
+}
+.nav > * {
+    text-align: center;
+    font-size: 2vh;
+    color: var(--wwhite);
+}
+.cvname {
+    margin: auto 0;
+}
+
+.buttons {
+    justify-content: space-around;
+    display: flex;
+    margin-left: 60vw;
+    width: 50vw;
+    height: 100%;
+}
+
