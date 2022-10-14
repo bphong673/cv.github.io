@@ -1,44 +1,95 @@
+@import url(Roboto_Mono/static/RobotoMono-Light.ttf);
+
 :root {
+    --nav-height: 5vh;
     --wblue: #1463f3;
     --wblack: #1d2023;
     --wwhite: #CCD0d8;
 }
 
 /*Basic Settings*/
-body, html {
+body,
+html {
+    overflow: auto;
     width: 100vw;
-    height: 100vh; 
+    height: 100vh;
 }
+
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+
+
+    font-family: 'Roboto Mono', monospace;
+    color: var(--wblack);
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-background: var(--wblue);
-    display: block;
+    background: var(--wwhite);
+
+
 }
 
-.nav {
-    background: var(--wblack);
-    height: 10vh;
+
+
+
+#nav {
+    width: 100vw;
+    position: fixed;
+    background: var(--wwhite);
+    height: 5vh;
     display: flex;
 }
-.nav > * {
+
+#nav>* {
     text-align: center;
     font-size: 2vh;
-    color: var(--wwhite);
+    color: var(--wblack);
 }
-.cvname {
-    margin: auto 0;
+
+.cv-name {
+    height: fit-content;
+    margin: auto auto;
+
 }
 
 .buttons {
     justify-content: space-around;
     display: flex;
     margin-left: 60vw;
-    width: 50vw;
-    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 30vw;
+    height: fit-content;
+}
+
+.page {
+
+
+
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    color: var(--wblue);
+}
+
+.hf {
+
+    font-size: 10vh;
+}
+@keyframes changeColor {
+    to{color: red;}
+}
+.hi1 {
+    animation: infinite 10s changeColor linear;
+    animation-fill-mode: forwards;
+    
+    
+    font-size: 10vh;
+    color: green;
 }
 

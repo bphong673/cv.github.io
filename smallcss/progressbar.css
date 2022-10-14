@@ -1,0 +1,7 @@
+#progressbar {
+    position:sticky ;
+    top: 5vh;
+    background: rgb(145, 0, 0);
+    width: 0;
+    height: 0.5vh;
+}
